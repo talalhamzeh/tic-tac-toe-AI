@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery.js"></script>
+  <script src="main.js"></script>
+  <script src="sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <h2> &#128187; Can you Beat Me ? </h2>
+    <h4>Your score :  <span id="player">0</span></h4>
+    <h4>My score :  <span id="pc">0</span></h4>
+  
+
+
+    <!--The data-* attribute is used to store custom data private to the page 
+    . data x represent the row and y represent the column 
+    -->
+    <div class="row">
+      <div class="col" data-i="0" data-j="0"></div>
+      <div class="col" data-i="0" data-j="1"></div>
+      <div class="col" data-i="0" data-j="2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col" data-i="1" data-j="0"></div>
+      <div class="col" data-i="1" data-j="1"></div>
+      <div class="col" data-i="1" data-j="2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col" data-i="2" data-j="0"></div>
+      <div class="col" data-i="2" data-j="1"></div>
+      <div class="col" data-i="2" data-j="2"></div>
+    </div>
+
+      <div>
+        <button id="reset"> Reset </button>
+        <button class="play">Play Again</button>
+      </div>
+</body>
+</html>
